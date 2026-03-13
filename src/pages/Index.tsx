@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import translations, { type Lang } from "@/i18n/translations";
 
 const skills = [
   { name: "Adobe Photoshop", pct: 92 },
@@ -15,31 +16,10 @@ const skills = [
   { name: "Klaviyo Email Design", pct: 72 },
 ];
 
-const softSkills = [
-  "Creative Thinking", "Attention to Detail", "Fast Execution",
-  "Team Collaboration", "Client Communication", "Self-learning",
-  "Deadline-driven", "Problem Solving",
-];
-
-const portfolio = [
-  {
-    title: "POD Anime Collection",
-    desc: "50+ apparel designs for anime-themed POD store targeting US market",
-    result: "Generated $20,000+ revenue in Q1 2024",
-    link: "https://behance.net/trantieungoc",
-  },
-  {
-    title: "Racing Apparel Line",
-    desc: "Complete brand identity kit + 30 product designs for US racing niche",
-    result: "Full brand system from logo to mockup-ready print files",
-    link: "https://behance.net/trantieungoc",
-  },
-  {
-    title: "E-commerce Email System",
-    desc: "15+ Klaviyo email templates for POD ecommerce campaigns",
-    result: "28% avg open rate — above industry benchmark of 21%",
-    link: "https://behance.net/trantieungoc",
-  },
+const portfolioLinks = [
+  "https://behance.net/trantieungoc",
+  "https://behance.net/trantieungoc",
+  "https://behance.net/trantieungoc",
 ];
 
 const tools = [
@@ -50,6 +30,9 @@ const tools = [
 const Index = () => {
   const mainRef = useRef<HTMLDivElement>(null);
   const [isLight, setIsLight] = useState(() => localStorage.getItem("theme") === "light");
+  const [lang, setLang] = useState<Lang>(() => (localStorage.getItem("lang") as Lang) || "en");
+
+  const t = translations[lang];
 
   useEffect(() => {
     document.documentElement.classList.toggle("light", isLight);
@@ -57,7 +40,10 @@ const Index = () => {
   }, [isLight]);
 
   useEffect(() => {
-    // Load Font Awesome
+    localStorage.setItem("lang", lang);
+  }, [lang]);
+
+  useEffect(() => {
     if (!document.querySelector('link[href*="font-awesome"]')) {
       const link = document.createElement("link");
       link.rel = "stylesheet";
@@ -65,7 +51,6 @@ const Index = () => {
       document.head.appendChild(link);
     }
 
-    // Scroll reveal observer
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -86,15 +71,25 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background transition-colors duration-300">
-      {/* Theme Toggle */}
-      <button
-        onClick={() => setIsLight(!isLight)}
-        className="fixed top-4 right-4 z-50 w-10 h-10 rounded-full flex items-center justify-center border border-border bg-card text-foreground hover:border-primary transition-colors duration-200 print-btn"
-        title={isLight ? "Switch to Dark Mode" : "Switch to Light Mode"}
-      >
-        <i className={`fa-solid ${isLight ? "fa-moon" : "fa-sun"} text-primary text-sm`} />
-      </button>
-      {/* OG meta handled in index.html */}
+      {/* Top-right toggles */}
+      <div className="fixed top-4 right-4 z-50 flex items-center gap-2 print-btn">
+        <button
+          onClick={() => setLang(lang === "en" ? "vi" : "en")}
+          className="h-10 px-3 rounded-full flex items-center justify-center gap-1.5 border border-border bg-card text-foreground hover:border-primary transition-colors duration-200 text-xs font-semibold"
+          title={lang === "en" ? "Chuyển sang Tiếng Việt" : "Switch to English"}
+        >
+          <i className="fa-solid fa-language text-primary text-sm" />
+          <span className="text-primary">{lang === "en" ? "VI" : "EN"}</span>
+        </button>
+        <button
+          onClick={() => setIsLight(!isLight)}
+          className="w-10 h-10 rounded-full flex items-center justify-center border border-border bg-card text-foreground hover:border-primary transition-colors duration-200"
+          title={isLight ? "Switch to Dark Mode" : "Switch to Light Mode"}
+        >
+          <i className={`fa-solid ${isLight ? "fa-moon" : "fa-sun"} text-primary text-sm`} />
+        </button>
+      </div>
+
       <div className="flex flex-col md:flex-row min-h-screen">
         {/* SIDEBAR */}
         <aside className="w-full md:w-[33%] bg-sidebar sidebar-pattern p-8 flex flex-col items-center md:min-h-screen">
@@ -116,19 +111,19 @@ const Index = () => {
               Trần Tiểu Ngọc
             </h1>
             <p className="text-sm text-muted-foreground mt-1 text-center leading-relaxed">
-              Senior Graphic Designer
+              {t.subtitle1}
               <br />
-              POD & Brand Visual | AI-Powered Design
+              {t.subtitle2}
             </p>
           </div>
 
           {/* Contact */}
           <div className="fade-section w-full mb-8">
-            <h3 className="section-header">Contact</h3>
+            <h3 className="section-header">{t.contact}</h3>
             <div className="space-y-3 text-sm">
               <ContactRow icon="fa-envelope" text="trantieungoc.designer@gmail.com" href="mailto:trantieungoc.designer@gmail.com" />
               <ContactRow icon="fa-phone" text="+84 393 258 483" href="tel:+84393258483" />
-              <ContactRow icon="fa-location-dot" text="Thu Duc, HCM City" />
+              <ContactRow icon="fa-location-dot" text={t.location} />
               <ContactRow icon="fa-brands fa-linkedin" text="LinkedIn" href="https://linkedin.com/in/trantieungoc" />
               <ContactRow icon="fa-brands fa-behance" text="Behance" href="https://behance.net/trantieungoc" />
             </div>
@@ -136,7 +131,7 @@ const Index = () => {
 
           {/* Hard Skills */}
           <div className="fade-section w-full mb-8">
-            <h3 className="section-header">Hard Skills</h3>
+            <h3 className="section-header">{t.hardSkills}</h3>
             <div className="space-y-3">
               {skills.map((s) => (
                 <div key={s.name}>
@@ -157,24 +152,24 @@ const Index = () => {
 
           {/* Languages */}
           <div className="fade-section w-full mb-8">
-            <h3 className="section-header">Languages</h3>
+            <h3 className="section-header">{t.languages}</h3>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-foreground">Vietnamese</span>
-                <span className="text-muted-foreground">Native</span>
+                <span className="text-foreground">{t.vietnamese}</span>
+                <span className="text-muted-foreground">{t.native}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-foreground">English</span>
-                <span className="text-muted-foreground">B2 — Upper Intermediate</span>
+                <span className="text-foreground">{t.english}</span>
+                <span className="text-muted-foreground">{t.englishLevel}</span>
               </div>
             </div>
           </div>
 
           {/* Soft Skills */}
           <div className="fade-section w-full">
-            <h3 className="section-header">Soft Skills</h3>
+            <h3 className="section-header">{t.softSkills}</h3>
             <div className="flex flex-wrap gap-2">
-              {softSkills.map((s) => (
+              {t.softSkillsList.map((s) => (
                 <span key={s} className="soft-tag">{s}</span>
               ))}
             </div>
@@ -183,28 +178,28 @@ const Index = () => {
 
         {/* MAIN CONTENT */}
         <main className="w-full md:w-[67%] p-8 md:p-12 space-y-10">
-          {/* Why Hire Me */}
+          {/* What I Bring */}
           <section className="scroll-reveal">
-            <h2 className="section-header">What I Bring to Your Team</h2>
+            <h2 className="section-header">{t.whatIBring}</h2>
             <ul className="space-y-3 text-sm text-foreground leading-relaxed">
               <li className="flex gap-3">
                 <i className="fa-solid fa-chart-line text-primary mt-0.5" />
-                <span><strong className="text-primary">Proven Revenue Impact</strong> — Generated $20,000+ from a single POD anime collection in one quarter.</span>
+                <span><strong className="text-primary">{t.revenueTitle}</strong> — {t.revenueDesc}</span>
               </li>
               <li className="flex gap-3">
                 <i className="fa-solid fa-gears text-primary mt-0.5" />
-                <span><strong className="text-primary">Automation Expert</strong> — Built Photoshop Actions & JS Scripts saving ~40% production time.</span>
+                <span><strong className="text-primary">{t.automationTitle}</strong> — {t.automationDesc}</span>
               </li>
               <li className="flex gap-3">
                 <i className="fa-solid fa-robot text-primary mt-0.5" />
-                <span><strong className="text-primary">AI-First Workflow</strong> — Leveraging Firefly, Generative Fill & Banana Pro for 3× faster output than traditional designers.</span>
+                <span><strong className="text-primary">{t.aiTitle}</strong> — {t.aiDesc}</span>
               </li>
             </ul>
           </section>
 
           {/* Work Experience */}
           <section className="scroll-reveal">
-            <h2 className="section-header">Work Experience</h2>
+            <h2 className="section-header">{t.workExp}</h2>
             <div className="flex gap-4">
               <div className="flex flex-col items-center">
                 <div className="timeline-dot" />
@@ -212,20 +207,12 @@ const Index = () => {
               </div>
               <div className="pb-2">
                 <h3 className="text-lg font-semibold text-foreground" style={{ fontFamily: "var(--font-heading)" }}>
-                  Graphic Designer — POD & Brand Visual
+                  {t.jobTitle}
                 </h3>
-                <p className="text-primary text-sm font-medium">Vani Ecommerce · Full-time</p>
-                <p className="text-muted-foreground text-xs mb-3">January 2021 — Present (4+ years)</p>
+                <p className="text-primary text-sm font-medium">{t.company}</p>
+                <p className="text-muted-foreground text-xs mb-3">{t.period}</p>
                 <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed">
-                  {[
-                    "Designed 500+ POD products (T-shirts 2D/3D, mugs, posters, banners) for US/EU markets",
-                    "Built complete Brand Identity systems: logo, color palette, typography guidelines",
-                    "Created Photoshop Actions & JS Scripts — reduced production time by ~40%",
-                    "Applied Color Theory and Typography principles for print-quality output",
-                    "Used Wacom Tablet for precision illustration and detailed artwork",
-                    "Integrated AI tools: Adobe Firefly, Generative Fill, Banana Pro into daily workflow",
-                    "Collaborated cross-functionally with marketing and ecommerce teams",
-                  ].map((item, i) => (
+                  {t.workItems.map((item, i) => (
                     <li key={i} className="flex gap-2">
                       <span className="text-primary mt-1">▸</span>
                       <span>{item}</span>
@@ -238,12 +225,12 @@ const Index = () => {
 
           {/* Portfolio */}
           <section className="scroll-reveal">
-            <h2 className="section-header">Portfolio Highlights</h2>
+            <h2 className="section-header">{t.portfolio}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {portfolio.map((p) => (
+              {t.portfolioItems.map((p, i) => (
                 <a
                   key={p.title}
-                  href={p.link}
+                  href={portfolioLinks[i]}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="portfolio-card block"
@@ -263,31 +250,31 @@ const Index = () => {
 
           {/* Education */}
           <section className="scroll-reveal">
-            <h2 className="section-header">Education</h2>
+            <h2 className="section-header">{t.education}</h2>
             <div className="flex gap-4">
               <div className="flex flex-col items-center">
                 <div className="timeline-dot" />
               </div>
               <div>
                 <h3 className="text-foreground font-semibold" style={{ fontFamily: "var(--font-heading)" }}>
-                  Bachelor of Graphic Design
+                  {t.degree}
                 </h3>
-                <p className="text-primary text-sm">HCM City University of Technology and Education</p>
-                <p className="text-muted-foreground text-xs">Graduated 2022</p>
+                <p className="text-primary text-sm">{t.school}</p>
+                <p className="text-muted-foreground text-xs">{t.graduated}</p>
               </div>
             </div>
           </section>
 
           {/* Tools & Tech */}
           <section className="scroll-reveal">
-            <h2 className="section-header">Tools & Tech Stack</h2>
+            <h2 className="section-header">{t.toolsTitle}</h2>
             <div className="flex flex-wrap gap-3">
-              {tools.map((t) => (
+              {tools.map((tool) => (
                 <div
-                  key={t}
+                  key={tool}
                   className="px-4 py-2 rounded-lg text-xs font-medium text-foreground border border-border bg-muted transition-colors duration-200 hover:border-primary hover:text-primary"
                 >
-                  {t}
+                  {tool}
                 </div>
               ))}
             </div>
@@ -300,7 +287,7 @@ const Index = () => {
               className="px-6 py-2.5 rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
             >
               <i className="fa-solid fa-download mr-2" />
-              Download PDF / Print CV
+              {t.downloadBtn}
             </button>
           </div>
         </main>
