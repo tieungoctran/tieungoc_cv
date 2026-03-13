@@ -11,7 +11,7 @@ const skills = [
   { name: "CapCut Pro", pct: 75 },
   { name: "AI Tools (Firefly, GenFill)", pct: 80 },
   { name: "HTML / CSS", pct: 65 },
-  { name: "Figma / UI-UX", pct: 68 },
+  { name: "Wireframe / UI-UX", pct: 68 },
   { name: "PS Actions & JS Scripts", pct: 78 },
   { name: "Klaviyo Email Design", pct: 72 },
 ];
