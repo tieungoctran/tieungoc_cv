@@ -2,17 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import translations, { type Lang } from "@/i18n/translations";
 
 const skills = [
-  { name: "Adobe Photoshop", pct: 92 },
+  { name: "Adobe Photoshop", pct: 95 },
   { name: "Adobe Illustrator", pct: 98 },
   { name: "Brand Identity Design", pct: 80 },
   { name: "POD / Print Design", pct: 90 },
-  { name: "Canva Pro", pct: 82 },
+  { name: "Canva Pro", pct: 75 },
   { name: "Wacom Tablet", pct: 85 },
-  { name: "CapCut Pro", pct: 75 },
+  { name: "CapCut Pro", pct: 72 },
   { name: "AI Tools (Firefly, GenFill)", pct: 80 },
   { name: "HTML / CSS", pct: 65 },
-  { name: "Wireframe / UI-UX", pct: 68 },
-  { name: "PS Actions & JS Scripts", pct: 78 },
+  { name: "Wireframe / UI-UX", pct: 60 },
+  { name: "PS Actions & JS Scripts", pct: 80 },
   { name: "Klaviyo Email Design", pct: 72 },
 ];
 
