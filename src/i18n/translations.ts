@@ -116,11 +116,6 @@ const translations = {
         desc: "Hơn 15 mẫu email Klaviyo cho chiến dịch thương mại điện tử POD",
         result: "Tỷ lệ mở trung bình 28% — cao hơn chuẩn ngành 21%",
       },
-      {
-        title: "Portfolio SVG Vector",
-        desc: "Bộ sưu tập thiết kế SVG hoàn chỉnh showcasing tác phẩm vector & minh họa",
-        result: "Xem tại tieungoc-portfolio.vercel.app",
-      },
     ],
     education: "Học Vấn",
     degree: "Cử nhân Thiết Kế Đồ Họa",
