@@ -86,7 +86,7 @@ const translations = {
     company: "Vani Ecommerce · Toàn thời gian",
     period: "Tháng 8/2022 — Hiện tại (hơn 4 năm)",
     workItems: [
-      "Thiết kế hơn 500 sản phẩm POD (áo thun 2D/3D, cốc, poster, banner) cho thị trường Mỹ/EU",
+      "Thiết kế hơn 1000 sản phẩm POD (áo thun 2D/3D, cốc, poster, banner) cho thị trường Mỹ/EU",
       "Xây dựng hệ thống Nhận Diện Thương Hiệu hoàn chỉnh: logo, bảng màu, quy chuẩn typography",
       "Tạo Photoshop Actions & JS Scripts — giảm 40% thời gian sản xuất",
       "Áp dụng Lý thuyết Màu sắc và Typography đảm bảo chất lượng in ấn",
