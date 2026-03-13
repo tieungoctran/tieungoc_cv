@@ -2,7 +2,7 @@ export type Lang = "en" | "vi";
 
 const translations = {
   en: {
-    subtitle1: "Senior Graphic Designer",
+    subtitle1: "Mid-level Graphic Designer",
     subtitle2: "POD & Brand Visual | AI-Powered Design",
     contact: "Contact",
     hardSkills: "Hard Skills",
@@ -72,7 +72,7 @@ const translations = {
     ],
   },
   vi: {
-    subtitle1: "Nhà Thiết Kế Đồ Họa Cao Cấp",
+    subtitle1: "Nhà Thiết Kế Đồ Họa Trung Cấp",
     subtitle2: "POD & Nhận Diện Thương Hiệu | Thiết Kế AI",
     contact: "Liên Hệ",
     hardSkills: "Kỹ Năng Chuyên Môn",
