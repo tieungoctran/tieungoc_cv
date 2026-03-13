@@ -20,7 +20,6 @@ const portfolioLinks = [
   "https://behance.net/trantieungoc",
   "https://behance.net/trantieungoc",
   "https://behance.net/trantieungoc",
-  "https://tieungoc-portfolio.vercel.app/",
 ];
 
 const tools = [
