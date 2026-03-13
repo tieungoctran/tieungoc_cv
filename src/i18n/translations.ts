@@ -134,6 +134,7 @@ const translations = {
     toolsTitle: "Công Cụ & Công Nghệ",
     downloadBtn: "Tải PDF / In CV",
     location: "TP. Thủ Đức, TP.HCM, Việt Nam",
+    portfolioLink: "Portfolio",
     softSkillsList: [
       "Tư duy Sáng tạo", "Chú ý Chi tiết", "Thực thi Nhanh",
       "Làm việc Nhóm", "Tự học",
