@@ -118,7 +118,7 @@ const translations = {
     graduated: "Tốt nghiệp 2022",
     toolsTitle: "Công Cụ & Công Nghệ",
     downloadBtn: "Tải PDF / In CV",
-    location: "TP. Thủ Đức, TP.HCM",
+    location: "TP. Thủ Đức, TP.HCM, Việt Nam",
     softSkillsList: [
       "Tư duy Sáng tạo", "Chú ý Chi tiết", "Thực thi Nhanh",
       "Làm việc Nhóm", "Giao tiếp Khách hàng", "Tự học",
