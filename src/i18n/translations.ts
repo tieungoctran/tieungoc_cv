@@ -76,6 +76,8 @@ const translations = {
     native: "Bản ngữ",
     english: "Tiếng Anh",
     englishLevel: "B2 — Trung cấp cao",
+    chinese: "Tiếng Trung",
+    chineseLevel: "Sơ cấp",
     whatIBring: "Giá Trị Tôi Mang Đến Cho Đội Ngũ",
     revenueTitle: "Tác Động Doanh Thu Thực Tế",
     revenueDesc: "Tạo ra hơn $20,000 doanh thu từ một bộ sưu tập POD anime trong một quý.",
