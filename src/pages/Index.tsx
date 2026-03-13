@@ -78,7 +78,7 @@ const Index = () => {
           className="h-10 px-3 rounded-full flex items-center justify-center gap-1.5 border border-border bg-card text-foreground hover:border-primary transition-colors duration-200 text-xs font-semibold"
           title={lang === "en" ? "Chuyển sang Tiếng Việt" : "Switch to English"}
         >
-          <i className="fa-solid fa-language text-primary text-sm" />
+          <i className="fa-solid fa-globe text-primary text-sm" />
           <span className="text-primary">{lang === "en" ? "VI" : "EN"}</span>
         </button>
         <button
