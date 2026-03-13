@@ -61,7 +61,7 @@ const translations = {
     location: "Thu Duc, HCM City, Vietnam",
     softSkillsList: [
       "Creative Thinking", "Attention to Detail", "Fast Execution",
-      "Team Collaboration", "Client Communication", "Self-learning",
+      "Team Collaboration", "Self-learning",
       "Deadline-driven", "Problem Solving", "Overthinking",
     ],
   },
