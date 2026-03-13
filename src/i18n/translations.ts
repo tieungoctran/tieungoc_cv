@@ -37,7 +37,7 @@ const translations = {
       {
         title: "POD Anime Collection",
         desc: "50+ apparel designs for anime-themed POD store targeting US market",
-        result: "Generated $20,000+ revenue in Q1 2024",
+        result: "Generated $20,000+ revenue in Q4 2025",
       },
       {
         title: "Racing Apparel Line",
