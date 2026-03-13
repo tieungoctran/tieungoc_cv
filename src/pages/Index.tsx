@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const skills = [
   { name: "Adobe Photoshop", pct: 92 },
@@ -48,6 +48,8 @@ const tools = [
 ];
 
 const Index = () => {
+  const mainRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     // Load Font Awesome
     if (!document.querySelector('link[href*="font-awesome"]')) {
@@ -56,6 +58,24 @@ const Index = () => {
       link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css";
       document.head.appendChild(link);
     }
+
+    // Scroll reveal observer
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    const sections = document.querySelectorAll(".scroll-reveal");
+    sections.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -150,8 +170,8 @@ const Index = () => {
         {/* MAIN CONTENT */}
         <main className="w-full md:w-[67%] p-8 md:p-12 space-y-10">
           {/* Why Hire Me */}
-          <section className="fade-section">
-            <h2 className="section-header">Why Hire Me at 12–15M VND?</h2>
+          <section className="scroll-reveal">
+            <h2 className="section-header">What I Bring to Your Team</h2>
             <ul className="space-y-3 text-sm text-foreground leading-relaxed">
               <li className="flex gap-3">
                 <i className="fa-solid fa-chart-line text-primary mt-0.5" />
@@ -169,7 +189,7 @@ const Index = () => {
           </section>
 
           {/* Work Experience */}
-          <section className="fade-section">
+          <section className="scroll-reveal">
             <h2 className="section-header">Work Experience</h2>
             <div className="flex gap-4">
               <div className="flex flex-col items-center">
@@ -203,7 +223,7 @@ const Index = () => {
           </section>
 
           {/* Portfolio */}
-          <section className="fade-section">
+          <section className="scroll-reveal">
             <h2 className="section-header">Portfolio Highlights</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {portfolio.map((p) => (
@@ -228,7 +248,7 @@ const Index = () => {
           </section>
 
           {/* Education */}
-          <section className="fade-section">
+          <section className="scroll-reveal">
             <h2 className="section-header">Education</h2>
             <div className="flex gap-4">
               <div className="flex flex-col items-center">
@@ -245,7 +265,7 @@ const Index = () => {
           </section>
 
           {/* Tools & Tech */}
-          <section className="fade-section">
+          <section className="scroll-reveal">
             <h2 className="section-header">Tools & Tech Stack</h2>
             <div className="flex flex-wrap gap-3">
               {tools.map((t) => (
