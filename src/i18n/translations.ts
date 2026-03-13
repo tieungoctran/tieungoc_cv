@@ -61,7 +61,7 @@ const translations = {
     location: "Thu Duc, HCM City, Vietnam",
     softSkillsList: [
       "Creative Thinking", "Attention to Detail", "Fast Execution",
-      "Team Collaboration", "Client Communication", "Self-learning",
+      "Team Collaboration", "Self-learning",
       "Deadline-driven", "Problem Solving", "Overthinking",
     ],
   },
@@ -125,7 +125,7 @@ const translations = {
     location: "TP. Thủ Đức, TP.HCM, Việt Nam",
     softSkillsList: [
       "Tư duy Sáng tạo", "Chú ý Chi tiết", "Thực thi Nhanh",
-      "Làm việc Nhóm", "Giao tiếp Khách hàng", "Tự học",
+      "Làm việc Nhóm", "Tự học",
       "Đúng Deadline", "Giải quyết Vấn đề", "Overthinking",
     ],
   },
