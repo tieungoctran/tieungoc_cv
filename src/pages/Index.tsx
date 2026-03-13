@@ -162,6 +162,10 @@ const Index = () => {
                 <span className="text-foreground">{t.english}</span>
                 <span className="text-muted-foreground">{t.englishLevel}</span>
               </div>
+              <div className="flex justify-between">
+                <span className="text-foreground">{t.chinese}</span>
+                <span className="text-muted-foreground">{t.chineseLevel}</span>
+              </div>
             </div>
           </div>
 
