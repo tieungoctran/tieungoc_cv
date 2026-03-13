@@ -52,6 +52,11 @@ const Index = () => {
   const [isLight, setIsLight] = useState(() => localStorage.getItem("theme") === "light");
 
   useEffect(() => {
+    document.documentElement.classList.toggle("light", isLight);
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+  }, [isLight]);
+
+  useEffect(() => {
     // Load Font Awesome
     if (!document.querySelector('link[href*="font-awesome"]')) {
       const link = document.createElement("link");
