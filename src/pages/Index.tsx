@@ -49,6 +49,7 @@ const tools = [
 
 const Index = () => {
   const mainRef = useRef<HTMLDivElement>(null);
+  const [isLight, setIsLight] = useState(() => localStorage.getItem("theme") === "light");
 
   useEffect(() => {
     // Load Font Awesome
