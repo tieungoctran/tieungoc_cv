@@ -56,7 +56,7 @@ const translations = {
     graduated: "Graduated 2022",
     toolsTitle: "Tools & Tech Stack",
     downloadBtn: "Download PDF / Print CV",
-    location: "Thu Duc, HCM City",
+    location: "Thu Duc, HCM City, Vietnam",
     softSkillsList: [
       "Creative Thinking", "Attention to Detail", "Fast Execution",
       "Team Collaboration", "Client Communication", "Self-learning",
