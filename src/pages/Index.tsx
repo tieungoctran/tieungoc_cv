@@ -124,7 +124,7 @@ const Index = () => {
               <ContactRow icon="fa-envelope" text="ngoctt.design@gmail.com" href="mailto:ngoctt.design@gmail.com" />
               <ContactRow icon="fa-phone" text="+84 393 258 ###" href="tel:+84393258483" />
               <ContactRow icon="fa-location-dot" text={t.location} />
-              <ContactRow icon="fa-brands fa-linkedin" text="LinkedIn" href="https://linkedin.com/in/trantieungoc" />
+              <ContactRow icon="fa-brands fa-linkedin" text="LinkedIn" href="https://www.linkedin.com/in/tieungoc-design/" />
               <ContactRow icon="fa-brands fa-behance" text="Behance" href="https://behance.net/trantieungoc" />
               <ContactRow icon="fa-solid fa-briefcase" text={t.portfolioLink} href="https://tieungoc-portfolio.vercel.app/" />
             </div>
