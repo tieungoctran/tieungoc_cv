@@ -85,7 +85,15 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background transition-colors duration-300">
+      {/* Theme Toggle */}
+      <button
+        onClick={() => setIsLight(!isLight)}
+        className="fixed top-4 right-4 z-50 w-10 h-10 rounded-full flex items-center justify-center border border-border bg-card text-foreground hover:border-primary transition-colors duration-200 print-btn"
+        title={isLight ? "Switch to Dark Mode" : "Switch to Light Mode"}
+      >
+        <i className={`fa-solid ${isLight ? "fa-moon" : "fa-sun"} text-primary text-sm`} />
+      </button>
       {/* OG meta handled in index.html */}
       <div className="flex flex-col md:flex-row min-h-screen">
         {/* SIDEBAR */}
