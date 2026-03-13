@@ -99,7 +99,7 @@ const translations = {
       {
         title: "Bộ Sưu Tập POD Anime",
         desc: "Hơn 50 thiết kế trang phục cho cửa hàng POD chủ đề anime nhắm vào thị trường Mỹ",
-        result: "Doanh thu hơn $20,000 trong Q1 2024",
+        result: "Doanh thu hơn $20,000 trong Q4 2025",
       },
       {
         title: "Dòng Trang Phục Racing",
