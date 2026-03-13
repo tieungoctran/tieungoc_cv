@@ -265,7 +265,7 @@ const Index = () => {
           </section>
 
           {/* Tools & Tech */}
-          <section className="fade-section">
+          <section className="scroll-reveal">
             <h2 className="section-header">Tools & Tech Stack</h2>
             <div className="flex flex-wrap gap-3">
               {tools.map((t) => (
