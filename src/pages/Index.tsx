@@ -121,7 +121,7 @@ const Index = () => {
           <div className="fade-section w-full mb-8">
             <h3 className="section-header">{t.contact}</h3>
             <div className="space-y-3 text-sm">
-              <ContactRow icon="fa-envelope" text="trantieungoc.designer@gmail.com" href="mailto:trantieungoc.designer@gmail.com" />
+              <ContactRow icon="fa-envelope" text="ngoctt.design@gmail.com" href="mailto:ngoctt.design@gmail.com" />
               <ContactRow icon="fa-phone" text="+84 393 258 483" href="tel:+84393258483" />
               <ContactRow icon="fa-location-dot" text={t.location} />
               <ContactRow icon="fa-brands fa-linkedin" text="LinkedIn" href="https://linkedin.com/in/trantieungoc" />
@@ -298,7 +298,7 @@ const Index = () => {
       </div>
 
       {/* Floating Contact */}
-      <a href="mailto:trantieungoc.designer@gmail.com" className="contact-fab print-btn" title="Contact Me">
+      <a href="mailto:ngoctt.design@gmail.com" className="contact-fab print-btn" title="Contact Me">
         <i className="fa-solid fa-envelope text-lg" />
       </a>
     </div>
