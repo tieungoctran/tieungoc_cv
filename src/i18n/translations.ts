@@ -24,7 +24,7 @@ const translations = {
     company: "Vani Ecommerce · Full-time",
     period: "August 2022 — Present (4+ years)",
     workItems: [
-      "Designed 1000+ POD products (T-shirts 2D/3D, mugs, posters, banners) for US/EU markets",
+      "Designed 3500+ POD products (T-shirts 2D/3D, mugs, posters, banners) for US/EU markets",
       "Built complete Brand Identity systems: logo, color palette, typography guidelines",
       "Created Photoshop Actions & JS Scripts — reduced production time by ~40%",
       "Applied Color Theory and Typography principles for print-quality output",
