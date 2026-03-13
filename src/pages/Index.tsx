@@ -20,6 +20,7 @@ const portfolioLinks = [
   "https://behance.net/trantieungoc",
   "https://behance.net/trantieungoc",
   "https://behance.net/trantieungoc",
+  "https://tieungoc-portfolio.vercel.app/",
 ];
 
 const tools = [
@@ -230,7 +231,7 @@ const Index = () => {
           {/* Portfolio */}
           <section className="scroll-reveal">
             <h2 className="section-header">{t.portfolio}</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {t.portfolioItems.map((p, i) => (
                 <a
                   key={p.title}
