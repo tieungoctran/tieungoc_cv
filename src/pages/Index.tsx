@@ -248,7 +248,7 @@ const Index = () => {
           </section>
 
           {/* Education */}
-          <section className="fade-section">
+          <section className="scroll-reveal">
             <h2 className="section-header">Education</h2>
             <div className="flex gap-4">
               <div className="flex flex-col items-center">
