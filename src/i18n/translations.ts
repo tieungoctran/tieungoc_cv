@@ -84,7 +84,7 @@ const translations = {
     workExp: "Kinh Nghiệm Làm Việc",
     jobTitle: "Nhà Thiết Kế Đồ Họa — POD & Nhận Diện Thương Hiệu",
     company: "Vani Ecommerce · Toàn thời gian",
-    period: "Tháng 1/2021 — Hiện tại (hơn 4 năm)",
+    period: "Tháng 8/2022 — Hiện tại (hơn 4 năm)",
     workItems: [
       "Thiết kế hơn 500 sản phẩm POD (áo thun 2D/3D, cốc, poster, banner) cho thị trường Mỹ/EU",
       "Xây dựng hệ thống Nhận Diện Thương Hiệu hoàn chỉnh: logo, bảng màu, quy chuẩn typography",
