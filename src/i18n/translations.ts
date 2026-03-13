@@ -12,6 +12,8 @@ const translations = {
     native: "Native",
     english: "English",
     englishLevel: "B2 — Upper Intermediate",
+    chinese: "Chinese",
+    chineseLevel: "Beginner",
     whatIBring: "What I Bring to Your Team",
     revenueTitle: "Proven Revenue Impact",
     revenueDesc: "Generated $20,000+ from a single POD anime collection in one quarter.",
