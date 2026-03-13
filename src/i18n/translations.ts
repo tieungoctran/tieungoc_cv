@@ -56,7 +56,7 @@ const translations = {
     graduated: "Graduated 2022",
     toolsTitle: "Tools & Tech Stack",
     downloadBtn: "Download PDF / Print CV",
-    location: "Thu Duc, HCM City",
+    location: "Thu Duc, HCM City, Vietnam",
     softSkillsList: [
       "Creative Thinking", "Attention to Detail", "Fast Execution",
       "Team Collaboration", "Client Communication", "Self-learning",
@@ -118,7 +118,7 @@ const translations = {
     graduated: "Tốt nghiệp 2022",
     toolsTitle: "Công Cụ & Công Nghệ",
     downloadBtn: "Tải PDF / In CV",
-    location: "TP. Thủ Đức, TP.HCM",
+    location: "TP. Thủ Đức, TP.HCM, Việt Nam",
     softSkillsList: [
       "Tư duy Sáng tạo", "Chú ý Chi tiết", "Thực thi Nhanh",
       "Làm việc Nhóm", "Giao tiếp Khách hàng", "Tự học",
