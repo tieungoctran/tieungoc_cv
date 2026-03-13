@@ -62,7 +62,7 @@ const translations = {
     softSkillsList: [
       "Creative Thinking", "Attention to Detail", "Fast Execution",
       "Team Collaboration", "Client Communication", "Self-learning",
-      "Deadline-driven", "Problem Solving",
+      "Deadline-driven", "Problem Solving", "Overthinking",
     ],
   },
   vi: {
