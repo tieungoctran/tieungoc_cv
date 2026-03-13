@@ -298,7 +298,7 @@ const Index = () => {
       </div>
 
       {/* Floating Contact */}
-      <a href="mailto:trantieungoc.designer@gmail.com" className="contact-fab print-btn" title="Contact Me">
+      <a href="mailto:ngoctt.design@gmail.com" className="contact-fab print-btn" title="Contact Me">
         <i className="fa-solid fa-envelope text-lg" />
       </a>
     </div>
