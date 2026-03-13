@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const skills = [
   { name: "Adobe Photoshop", pct: 92 },
