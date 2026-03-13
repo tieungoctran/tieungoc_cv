@@ -125,7 +125,7 @@ const translations = {
     location: "TP. Thủ Đức, TP.HCM, Việt Nam",
     softSkillsList: [
       "Tư duy Sáng tạo", "Chú ý Chi tiết", "Thực thi Nhanh",
-      "Làm việc Nhóm", "Giao tiếp Khách hàng", "Tự học",
+      "Làm việc Nhóm", "Tự học",
       "Đúng Deadline", "Giải quyết Vấn đề", "Overthinking",
     ],
   },
