@@ -11,7 +11,7 @@ const translations = {
     vietnamese: "Vietnamese",
     native: "Native",
     english: "English",
-    englishLevel: "B2 — Upper Intermediate",
+    englishLevel: "Beginner",
     chinese: "Chinese",
     chineseLevel: "Beginner",
     whatIBring: "What I Bring to Your Team",
