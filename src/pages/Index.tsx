@@ -170,8 +170,8 @@ const Index = () => {
         {/* MAIN CONTENT */}
         <main className="w-full md:w-[67%] p-8 md:p-12 space-y-10">
           {/* Why Hire Me */}
-          <section className="fade-section">
-            <h2 className="section-header">Why Hire Me at 12–15M VND?</h2>
+          <section className="scroll-reveal">
+            <h2 className="section-header">What I Bring to Your Team</h2>
             <ul className="space-y-3 text-sm text-foreground leading-relaxed">
               <li className="flex gap-3">
                 <i className="fa-solid fa-chart-line text-primary mt-0.5" />
