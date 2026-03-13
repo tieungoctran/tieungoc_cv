@@ -64,6 +64,7 @@ const translations = {
     toolsTitle: "Tools & Tech Stack",
     downloadBtn: "Download PDF / Print CV",
     location: "Thu Duc, HCM City, Vietnam",
+    portfolioLink: "Portfolio",
     softSkillsList: [
       "Creative Thinking", "Attention to Detail", "Fast Execution",
       "Team Collaboration", "Self-learning",
@@ -133,6 +134,7 @@ const translations = {
     toolsTitle: "Công Cụ & Công Nghệ",
     downloadBtn: "Tải PDF / In CV",
     location: "TP. Thủ Đức, TP.HCM, Việt Nam",
+    portfolioLink: "Portfolio",
     softSkillsList: [
       "Tư duy Sáng tạo", "Chú ý Chi tiết", "Thực thi Nhanh",
       "Làm việc Nhóm", "Tự học",
