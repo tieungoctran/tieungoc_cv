@@ -75,7 +75,7 @@ const translations = {
     vietnamese: "Tiếng Việt",
     native: "Bản ngữ",
     english: "Tiếng Anh",
-    englishLevel: "B2 — Trung cấp cao",
+    englishLevel: "Sơ cấp",
     chinese: "Tiếng Trung",
     chineseLevel: "Sơ cấp",
     whatIBring: "Giá Trị Tôi Mang Đến Cho Đội Ngũ",
