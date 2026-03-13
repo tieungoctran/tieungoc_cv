@@ -51,6 +51,11 @@ const translations = {
         desc: "15+ Klaviyo email templates for POD ecommerce campaigns",
         result: "28% avg open rate — above industry benchmark of 21%",
       },
+      {
+        title: "SVG Vector Portfolio",
+        desc: "Complete SVG design collection showcasing vector artwork & illustrations",
+        result: "View at tieungoc-portfolio.vercel.app",
+      },
     ],
     education: "Education",
     degree: "Bachelor of Graphic Design",
