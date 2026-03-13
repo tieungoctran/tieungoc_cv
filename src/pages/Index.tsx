@@ -223,7 +223,7 @@ const Index = () => {
           </section>
 
           {/* Portfolio */}
-          <section className="fade-section">
+          <section className="scroll-reveal">
             <h2 className="section-header">Portfolio Highlights</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {portfolio.map((p) => (
