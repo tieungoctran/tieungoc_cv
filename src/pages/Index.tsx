@@ -48,6 +48,8 @@ const tools = [
 ];
 
 const Index = () => {
+  const mainRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     // Load Font Awesome
     if (!document.querySelector('link[href*="font-awesome"]')) {
@@ -56,6 +58,24 @@ const Index = () => {
       link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css";
       document.head.appendChild(link);
     }
+
+    // Scroll reveal observer
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    const sections = document.querySelectorAll(".scroll-reveal");
+    sections.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
   }, []);
 
   return (
