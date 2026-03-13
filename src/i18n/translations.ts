@@ -22,7 +22,7 @@ const translations = {
     workExp: "Work Experience",
     jobTitle: "Graphic Designer — POD & Brand Visual",
     company: "Vani Ecommerce · Full-time",
-    period: "January 2021 — Present (4+ years)",
+    period: "August 2022 — Present (4+ years)",
     workItems: [
       "Designed 500+ POD products (T-shirts 2D/3D, mugs, posters, banners) for US/EU markets",
       "Built complete Brand Identity systems: logo, color palette, typography guidelines",
