@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import translations, { type Lang } from "@/i18n/translations";
 
 const skills = [
-  { name: "Adobe Photoshop", pct: 95 },
+  { name: "Adobe Photoshop", pct: 90 },
   { name: "Adobe Illustrator", pct: 75 },
   { name: "Brand Identity Design", pct: 80 },
   { name: "POD / Print Design", pct: 90 },
