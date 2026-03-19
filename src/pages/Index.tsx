@@ -108,7 +108,7 @@ const Index = () => {
               />
             </div>
             <h1 className="text-2xl font-bold text-foreground" style={{ fontFamily: "var(--font-heading)" }}>
-              Trần Tiểu Ngọc
+              {t.fullName}
             </h1>
             <p className="text-sm text-muted-foreground mt-1 text-center leading-relaxed">
               {t.subtitle1}
