@@ -1,7 +1,7 @@
 export type Lang = "en" | "vi";
 
 const translations = {
-  en: {
+  en: {\n    fullName: "Tieu Ngoc Tran",
     subtitle1: "Mid-level Graphic Designer",
     subtitle2: "POD & Brand Visual | AI-Powered Design",
     contact: "Contact",
