@@ -67,7 +67,8 @@ const translations = {
       "Deadline-driven", "Problem Solving", "Overthinking",
     ],
   },
-  vi: {\n    fullName: "Trần Tiểu Ngọc",
+  vi: {
+    fullName: "Trần Tiểu Ngọc",
     subtitle1: "Nhà Thiết Kế Đồ Họa Trung Cấp",
     subtitle2: "POD & Nhận Diện Thương Hiệu | Thiết Kế AI",
     contact: "Liên Hệ",
