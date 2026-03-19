@@ -2,6 +2,7 @@ export type Lang = "en" | "vi";
 
 const translations = {
   en: {
+    fullName: "Tieu Ngoc Tran",
     subtitle1: "Mid-level Graphic Designer",
     subtitle2: "POD & Brand Visual | AI-Powered Design",
     contact: "Contact",
@@ -67,6 +68,7 @@ const translations = {
     ],
   },
   vi: {
+    fullName: "Trần Tiểu Ngọc",
     subtitle1: "Nhà Thiết Kế Đồ Họa Trung Cấp",
     subtitle2: "POD & Nhận Diện Thương Hiệu | Thiết Kế AI",
     contact: "Liên Hệ",
