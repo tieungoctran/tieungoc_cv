@@ -126,7 +126,7 @@ const Index = () => {
               <ContactRow icon="fa-location-dot" text={t.location} />
               <ContactRow icon="fa-brands fa-linkedin" text="LinkedIn" href="https://www.linkedin.com/in/tieungoc-design/" />
               <ContactRow icon="fa-brands fa-behance" text="Behance" href="https://behance.net/trantieungoc" />
-              <ContactRow icon="fa-solid fa-briefcase" text={t.portfolioLink} href="https://tieungoc-portfolio.vercel.app/" />
+              <ContactRow icon="fa-solid fa-briefcase" text={t.portfolioLink} href="https://tieungoc.site/#portfolio" />
             </div>
           </div>
 
